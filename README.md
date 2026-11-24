@@ -1,6 +1,11 @@
 # opencode-config
 Configuración de IA generalista para Opencode
 
+## Skills
+
+- **git-conventional-commits**: guía para proponer, revisar y crear mensajes de
+  commit según Conventional Commits 1.0.0, incluidos cambios incompatibles.
+
 ## Servidores MCP
 
 La configuración utiliza el formato de OpenCode v2 e incluye los servidores
