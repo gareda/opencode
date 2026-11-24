@@ -1,0 +1,33 @@
+{
+    "name": "opencode-config",
+    "image": "mcr.microsoft.com/devcontainers/base:noble",
+    "features": {
+        "ghcr.io/devcontainers-extra/features/opencode:1.0.0": {},
+        "ghcr.io/devcontainers-extra/features/pre-commit:2.0.18": {}
+    },
+    "onCreateCommand": "git config credential.useHttpPath true && pre-commit install",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "DavidAnson.vscode-markdownlint",
+                "sst-dev.opencode",
+                "streetsidesoftware.code-spell-checker",
+                "streetsidesoftware.code-spell-checker-spanish",
+                "vscode-icons-team.vscode-icons"
+            ],
+            "settings": {
+                "editor.bracketPairColorization.enabled": true,
+                "editor.formatOnSave": true,
+                "editor.formatOnSaveMode": "file",
+                "editor.guides.bracketPairs": "active",
+                "editor.suggest.preview": true,
+                "explorer.compactFolders": false,
+                "files.autoSave": "afterDelay",
+                "git.autofetch": true,
+                "git.confirmSync": false,
+                "workbench.iconTheme": "vscode-icons",
+                "workbench.colorTheme": "Dark+"
+            }
+        }
+    }
+}
