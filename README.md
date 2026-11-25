@@ -5,6 +5,9 @@ Configuración de IA generalista para Opencode
 
 - **git-conventional-commits**: guía para proponer, revisar y crear mensajes de
   commit según Conventional Commits 1.0.0, incluidos cambios incompatibles.
+- **terraform-editor**: convenciones para crear y modificar archivos de
+  Terraform, como `versions.tf`, `providers.tf`, `main.tf`, `locals.tf`,
+  `variables.tf` y `outputs.tf`.
 
 ## Servidores MCP
 
