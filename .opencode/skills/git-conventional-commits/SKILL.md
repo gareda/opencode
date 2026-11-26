@@ -52,3 +52,7 @@ Antes de generar commits, analiza el alcance y la naturaleza de todos los cambio
 - Al proponer o preparar commits parciales, especifica qué cambios del archivo pertenecen a cada commit. No incluyas accidentalmente cambios no relacionados ni des por hecho que todo el archivo debe entrar en un único commit.
 - Identifica las dependencias entre cambios de cualquier tipo. Si el cambio A requiere el cambio B y B tiene sentido por sí solo, ordena primero el commit de B y después el de A. Explica la relación en el cuerpo del commit de A cuando ayude a entenderlo.
 - Si dos cambios dependen entre sí y no pueden separarse coherentemente, agrúpalos en un commit y explica por qué.
+
+# Comportamiento
+
+Cuando se solicita uno o varios commits, antes de proceder a generarlos, debe ser generada siempre una propuesta para ser aprobada por el usuario.
