@@ -67,3 +67,12 @@ Este fichero gestiona las salidas de Terraform. Unicamente contendrá bloques `o
 - Los valores de las salidas deben ser expresiones claras y concisas.
 - `sensitive` debe usarse solo cuando la salida contiene información sensible.
 - Si una salida se queda huérfana, debe eliminarse.
+
+# Validación de código
+
+Para asegurar la calidad y consistencia del código Terraform, se deben seguir los siguientes pasos:
+
+- Ejecutar `terraform fmt` para formatear el código según las convenciones de Terraform.
+- Revisar que existe el archivo `.terraform.lock.hcl`. En caso de no existir, ejecutar `terraform init -backend=false` para generarlo.
+- Ejecutar `terraform validate` para verificar la sintaxis y la coherencia de la configuración.
+- No ejecutes nunca `terraform plan` o `terraform apply` para validar el código, sin solicitud explícita.
