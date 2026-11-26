@@ -10,7 +10,7 @@ description: Usar siempre que se quiera crear o modificar un archivo de Terrafor
 Este fichero gestiona la versión de terraform, el versionado de los proveedores y la configuración de backend para el terraform state. Unicamente contendrá un único bloque `terraform`. Los bloques hijos deben seguir el orden:
 
 - `required_version`: El patron a debe ser `>= X.Y.0`. Se debe fijar la ultima version mayor y minor estable.
-- `required_providers`: 
+- `required_providers`:
   - Los proveedores deben ordenarse alfabéticamente.
   - El nombre por defecto debe ser el propio del proveedor. En caso de necesitarse dos configuraciones del mismos proveedor, consultar alias.
   - El patron a debe ser `~> N.0`. Se debe fijar la ultima version mayor estable.
@@ -32,6 +32,7 @@ Este fichero gestiona los recursos principales de Terraform. Unicamente contendr
 
 - Los nombres de los bloques deben ser `snake_case`.
 - Los bloques deben organizarse de manera que los recursos que dependen de otros se definan después de los recursos de los que dependen.
+- Los bloques `data` siempre van antes que los bloques `resource` y `module`.
 - Si un `data` se queda huérfano, debe eliminarse.
 
 Los bloques `import` y `removed` pueden ser añadidos por solicitud explícita. El bloque deben ir antes de los bloques `resource` que correspondan. Al implementar `removed`, consultar si debe ser comentado o borrado el bloque que remueve.
