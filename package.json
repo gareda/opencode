@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@plainconcepts/opencode-provider": "github:plainconcepts/Forge-Connect#opencode2"
+  }
+}
