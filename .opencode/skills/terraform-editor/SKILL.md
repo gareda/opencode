@@ -76,3 +76,7 @@ Para asegurar la calidad y consistencia del código Terraform, se deben seguir l
 - Revisar que existe el archivo `.terraform.lock.hcl`. En caso de no existir, ejecutar `terraform init -backend=false` para generarlo.
 - Ejecutar `terraform validate` para verificar la sintaxis y la coherencia de la configuración.
 - No ejecutes nunca `terraform plan` o `terraform apply` para validar el código, sin solicitud explícita.
+
+## Patrones por proveedor
+
+- Para el proveedor de AzureRM, usa [AzureRM](references/azurerm-provider.md)
