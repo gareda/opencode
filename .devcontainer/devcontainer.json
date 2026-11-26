@@ -1,6 +1,6 @@
 {
-    "name": "opencode-config",
-    "image": "mcr.microsoft.com/devcontainers/base:noble",
+    "name": "opencode",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:26-trixie",
     "features": {
         "ghcr.io/devcontainers-extra/features/opencode:1.0.0": {},
         "ghcr.io/devcontainers-extra/features/pre-commit:2.0.18": {}
