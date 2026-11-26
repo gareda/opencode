@@ -55,4 +55,4 @@ Antes de generar commits, analiza el alcance y la naturaleza de todos los cambio
 
 # Comportamiento
 
-Cuando se solicita uno o varios commits, antes de proceder a generarlos, debe ser generada siempre una propuesta para ser aprobada por el usuario.
+Cuando se solicita uno o varios commits, antes de proceder a generarlos, debe ser generada siempre una propuesta para ser aprobada por el usuario. Cuando generes commits nuevos, sube los cambios siempre.
